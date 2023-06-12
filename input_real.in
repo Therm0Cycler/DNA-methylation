@@ -1,0 +1,38 @@
+nrun                    1
+nstep                   200000000
+length                  500
+outputHp1               outputHp1-(0.001-10-10-0.05-0.1-5-0.001).dat
+outputMet               outputMet-(0.001-10-10-0.05-0.1-5-0.001).dat
+StatReactions           StatReactions-(0.001-10-10-0.05-0.1-5-0.001).dat
+nameMatOut              Matrix-(0.001-10-10-0.05-0.1-5-0.001).dat
+stride                  1000
+matStride               10000
+#debug
+seed                    -1
+
+kRandMethyl             0.00001
+kRandDemethyl           1.0
+kNeighMethyl            0.
+kSpatialNeighMethyl     0.001
+
+kRandHp1Bind            10
+kRandHp1Unbind          10
+kMethHp1Unbind          0.05
+#kUnbindingHotspots	0.2
+
+
+type                    none
+alpha                   -1.5
+initialFileMet          initial500.dat
+initialFileHp1          initial500zero.dat
+#initialMatFile         initialMatrix.dat
+
+valence                 2
+kContactFormation       0.1
+kContactBreakingUn      5
+kContactBreakingMethyl  0.001
+
+#maxHP1                 700
+#multipleContacts
+
+
